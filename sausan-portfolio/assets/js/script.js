@@ -120,5 +120,5 @@ function toggleProjects(){
 
     btn.innerHTML = expanded
         ? 'Show Less <i class="fa fa-chevron-up"></i>'
-        : 'View All 9 Projects <i class="fa fa-chevron-down"></i>';
+        : 'View All 8 Projects <i class="fa fa-chevron-down"></i>';
 }

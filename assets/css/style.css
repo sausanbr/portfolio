@@ -435,6 +435,9 @@
         margin-top:40px;
         background:transparent;
     }
+    .portfolio-more.hidden {
+      display: none;
+    }
     .portfolio-more::before,
     .portfolio-more::after{
         content:"";

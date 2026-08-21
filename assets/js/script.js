@@ -1,5 +1,5 @@
 /* ── TYPEWRITER ─────────────────────────── */
-const words = ['UI/UX Designer.','Web Developer.','ML Engineer.','Data Enthusiast.'];
+const words = ['Data Scientist','Web Developer','AI/ML Engineer'];
 let wi=0, ci=0, deleting=false;
 const el = document.getElementById('typed');
 function type(){
@@ -107,18 +107,61 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
 });
 
 /* ── SHOW ALL PROJECTS ───────────────────── */
+let activeCategory = 'all';
 let expanded = false;
-function toggleProjects(){
+
+function updateProjects() {
+    const cards = document.querySelectorAll('.pcard');
+    const viewMoreWrap = document.querySelector('.portfolio-more');
+
+    cards.forEach(card => {
+        const category = card.dataset.cat;
+        const isHiddenProject = card.classList.contains('hidden-project');
+
+        if (activeCategory !== 'all') {
+            card.style.display = category === activeCategory ? 'block' : 'none';
+        } 
+        else {
+            card.style.display = isHiddenProject && !expanded
+                ? 'none'
+                : 'block';
+        }
+    });
+
+    if (viewMoreWrap) {
+        viewMoreWrap.classList.toggle('hidden', activeCategory !== 'all');
+    }
+
+    const btn = document.getElementById('viewMoreBtn');
+
+    if (btn) {
+        btn.innerHTML = expanded
+            ? 'Show Less <i class="fa fa-chevron-up"></i>'
+            : 'View All 8 Projects <i class="fa fa-chevron-down"></i>';
+    }
+}
+
+
+function filterP(cat, btn) {
+    activeCategory = cat;
+
+    document.querySelectorAll('.fbtn').forEach(b => {
+        b.classList.remove('active');
+    });
+
+    btn.classList.add('active');
+    if (cat !== 'all') {
+        expanded = false;
+    }
+
+    updateProjects();
+}
+
+
+function toggleProjects() {
+    if (activeCategory !== 'all') return;
 
     expanded = !expanded;
 
-    document.querySelectorAll(".hidden-project").forEach(card=>{
-        card.style.display = expanded ? "block" : "none";
-    });
-
-    const btn = document.getElementById("viewMoreBtn");
-
-    btn.innerHTML = expanded
-        ? 'Show Less <i class="fa fa-chevron-up"></i>'
-        : 'View All 9 Projects <i class="fa fa-chevron-down"></i>';
+    updateProjects();
 }
