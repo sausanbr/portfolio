@@ -4,11 +4,12 @@ const projects = {
         badge: "Undergraduate Thesis",
         visibility: "public",
         title: "Fake vs Real Twitter Account Classification",
+        timeline: "Oct 2025 — Feb 2026",
         gallery:[
         "assets/img/ta/grafik_dl.png",
-        "assets/img/ta/pipeline skripsi-multimodal.png",
         "assets/img/ta/curve.png",
-        "assets/img/ta/cm.png"
+        "assets/img/ta/cm.png",
+        "assets/img/ta/pipeline.png"
         ],
         overview:
         "Developed a <strong>multimodal deep learning model</strong> for fake account detection on X (Twitter) by combining tweet text and user metadata through <strong>late fusion</strong>. Evaluated on the Cresci-2017 dataset, the proposed model achieved <strong>99.20% accuracy</strong>, outperforming unimodal approaches.",
@@ -58,13 +59,14 @@ const projects = {
     /* ── INTERNSHIP ───────────────────── */
 
     intern:{
-        badge: "Internship Project",
+        badge: "Internship",
         visibility: "private",
         title: "Fixed Asset Management System (PT Dirgantara Indonesia)",
+        timeline: "Jan 2025 — Feb 2025",
         gallery:[
-        "assets/img/pkl/pkl-preview.png",
-        "assets/img/pkl/pkl-1.png",
-        "assets/img/pkl/pkl-role.png",
+            "assets/img/pkl/pkl-1.png",
+            "assets/img/pkl/pkl-role.png",
+            "assets/img/pkl/pkl-preview.png",
         "assets/img/pkl/pkl-2.png",
         "assets/img/pkl/pkl-3.png",
         "assets/img/pkl/pkl-modal.png",
@@ -77,7 +79,7 @@ const projects = {
         overview:
         "Developed a web-based <b>Fixed Asset Management System</b> during my internship at PT Dirgantara Indonesia to digitalize asset registration, QR code tracking, depreciation monitoring, and damage reporting for the IT Division.",        
         problem:
-        "The existing asset management process relied heavily on <strong>manual paperwork</strong>, resulting in delayed record updates, data inconsistencies, and limited visibility of asset depreciation. Managing hundreds of IT assets efficiently required a more structured and digital workflow.",
+        "The existing asset management system had an <b>unstructured database and an outdated interface</b>, which made it difficult to track assets and monitor depreciation. With hundreds of IT assets to manage, the system needed a more organized database, a simpler interface, and a more efficient way to report damaged assets.",
         solution:
         "Built a full-stack web application using <strong>Laravel and MySQL</strong> with role-based access control for two user roles. Core features include CRUD modules for <strong>12 asset categories</strong>, QR code generation for physical asset identification, a damage reporting module with condition tracking, and depreciation visualization on dashboard. Covered end-to-end development from requirements gathering to deployment, and validated functionality through <strong>137 Black Box test cases</strong>.",                
         contributions: [
@@ -93,7 +95,6 @@ const projects = {
             {label:"Modules", value:"8"},
             {label:"Asset Categories", value:"12"},
             {label:"Methodology", value:"Waterfall"},
-            // {label:"Black Box Testing", value:"100% Passed"}
         ],
             stack: [
             "Laravel", 
@@ -112,6 +113,7 @@ const projects = {
         badge: "Course Project",
         visibility: "public",
         title: "MAGISTRA (Academic Management Information System)",
+        timeline: "Aug 2024 — Dec 2024",
         gallery:[
         "assets/img/magistra/mag-login.png",
         "assets/img/magistra/magistra-db.png",
@@ -119,7 +121,6 @@ const projects = {
         "assets/img/magistra/mag-jadwal.png",
         "assets/img/magistra/mag-irs.png",
         "assets/img/magistra/mag-kelola-matkul.png",
-        "assets/img/magistra/bisnis proses.png",
         ],
         overview: 
         "MAGISTRA is a web-based <b>academic management system</b> built for a Software Development course. The system supports 5 interconnected user roles (Student, Academic Advisor, Head of Study Program, Academic Division, and Dean), each with distinct responsibilities and approval dependencies, designed to <b>ensure structured study planning</b> and monitoring students's course registration each semester.",
@@ -169,14 +170,14 @@ const projects = {
         badge: "Course Project",
         visibility: "public",
         title: "Customer Segmentation",
+        timeline: "Nov 2024 — Dec 2024",
         gallery:[
         "assets/img/segmentation/streamlit.png",
         "assets/img/segmentation/elbow curve.png",
         "assets/img/segmentation/boxplot.png",
         "assets/img/segmentation/cluster0.png",
         "assets/img/segmentation/cluster1.png",
-        "assets/img/segmentation/cluster2.png",
-        "assets/img/segmentation/rfm.png",
+        "assets/img/segmentation/cluster2.png"
         ],
         overview: "Segmented 541,909 transaction records into 3 customer clusters using <b>RFM analysis and K-Means clustering to support targeted marketing strategies</b>. Each segment was profiled to help businesses identify high-value customers and allocate marketing efforts more effectively.",
         problem: "Raw transaction data offers little actionable insight without proper grouping. Businesses need a way to distinguish high-value customers from low-engagement ones to allocate marketing efforts more effectively.",
@@ -222,7 +223,12 @@ const projects = {
         badge: "Course Project",
         visibility: "public",
         title: "Content-Based Music Recommendation System",
+        timeline: "Dec 2025",
         gallery:[
+        "assets/img/music/pipeline.png",
+        "assets/img/music/waveform.png",
+        "assets/img/music/corrmap.png",
+        "assets/img/music/pca.png",
         "assets/img/music/cm.png",
         ],
         overview: "A content-based music recommendation system built on the GTZAN dataset (999 songs, 10 genres). The system <b>extracts audio features</b> from raw audio files, <b>classifies the genre using SVM</b>, then <b>recommends</b> the 10 most similar songs using <b>cosine similarity</b> on the extracted feature vectors.",
@@ -269,6 +275,7 @@ const projects = {
         badge: "KKN Project",
         visibility: "public",
         title: "Kopi Lanjan Branding Website",
+        timeline: "Jul 2025 – Aug 2025",
         gallery:[
         "assets/img/lanjan/landing-page.png",
         "assets/img/lanjan/tentang.png",
@@ -312,6 +319,11 @@ const projects = {
             icon: "fa fa-external-link", 
             url: "https://desa-lanjan.netlify.app" 
         },
+        { 
+            label: "GitHub", 
+            icon: "fa-brands fa-github", 
+            url: "https://github.com/sausanbr/kopi-lanjan" 
+        },
         ],
     },
 
@@ -320,10 +332,12 @@ const projects = {
         badge: "Course Project",
         visibility: "public",
         title: "Sentiment Analysis of Tokopedia Reviews",
+        timeline: "May 2025",
         gallery:[
         "assets/img/tokped/wordcloud.png",
         "assets/img/tokped/distribusi-sentiment.png",
-        "assets/img/tokped/cm.png",
+        "assets/img/tokped/lr.png",
+        "assets/img/tokped/svm.png",
         ],
         overview: "<b>Classified sentiment of 5,305 Indonesian e-commerce reviews</b> from the PRDECT-ID dataset (29 product categories on Tokopedia) into positive and negative classes. Used IndoBERT embeddings to capture contextual meaning in Bahasa Indonesia, then compared Logistic Regression and SVM as classifiers.",
 
@@ -367,6 +381,7 @@ const projects = {
         badge: "UI/UX Competition",
         visibility: "private",
         title: "SiKecil",
+        timeline: "Mar 2025 — Aug 2025",
         gallery:[
         "assets/img/sikecil/Poster-1.png",
         "assets/img/sikecil/1.png",

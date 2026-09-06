@@ -1,634 +1,1387 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
+<html lang="en" data-theme="light">
+<head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Sausan Berliana</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
+  <title>Portfolio | Sausan Berliana Arrizqi</title>
+  <meta name="description" content="Sausan Berliana Arrizqi — Informatics graduate from Universitas Diponegoro."/>
+  <meta name="theme-color" content="#0A0B0E"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
 
-  <body>
-<!-- NAV -->
-<nav id="navbar">
-  <a class="nav-logo" href="#home">Portfolio | Sausan Berliana<span>.</span></a>
-  <button class="hamburger" id="ham" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-right" id="navRight">
-    <ul class="nav-links">
-      <li><a href="#home"     onclick="closeNav()">Home</a></li>
-      <li><a href="#about"    onclick="closeNav()">About</a></li>
-      <!-- <li><a href="#skills" onclick="closeNav()">Skills</a></li> -->
-      <li><a href="#project"onclick="closeNav()">Projects</a></li>
-      <!-- <li><a href="#testimonials" onclick="closeNav()">Testimonials</a></li> -->
-      <li><a href="#contact"  onclick="closeNav()">Contact</a></li>
-      <!-- <li><a class="nav-hire" href="#contact" onclick="closeNav()">Hire Me</a></li> -->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body>
+
+<div class="page-canvas">
+  <div class="canvas-field" aria-hidden="true">
+    <!-- <span class="blob cb1"></span> -->
+    <span class="blob cb2"></span>
+    <span class="blob cb3"></span>
+    <div class="particles">
+      <span style="--s:4.1px;--l:15.8%;--d:39.6s;--y:-44.5s;--x:5px"></span>
+      <span style="--s:4.3px;--l:6.7%;--d:36.2s;--y:-46.2s;--x:-9px"></span>
+      <span style="--s:2.8px;--l:9.9%;--d:34.2s;--y:-8.3s;--x:-53px"></span>
+      <span style="--s:3.6px;--l:62.5%;--d:46.7s;--y:-20.3s;--x:-14px"></span>
+      <span style="--s:7.4px;--l:5.6%;--d:44.6s;--y:-34.1s;--x:-50px"></span>
+      <span style="--s:3.1px;--l:31.2%;--d:43.6s;--y:-39.3s;--x:11px"></span>
+      <span style="--s:5.7px;--l:37.5%;--d:37.1s;--y:-45.0s;--x:-62px"></span>
+      <span style="--s:3.5px;--l:67.7%;--d:34.3s;--y:-32.9s;--x:12px"></span>
+      <span style="--s:4.8px;--l:30.4%;--d:43.1s;--y:-14.4s;--x:-36px"></span>
+      <span style="--s:5.4px;--l:52.5%;--d:45.0s;--y:-13.0s;--x:-30px"></span>
+      <span style="--s:7.4px;--l:12.6%;--d:34.0s;--y:-11.7s;--x:-49px"></span>
+      <span style="--s:4.9px;--l:4.8%;--d:40.0s;--y:-11.3s;--x:10px"></span>
+      <span style="--s:6.9px;--l:31.7%;--d:40.7s;--y:-19.5s;--x:11px"></span>
+      <span style="--s:4.8px;--l:83.3%;--d:46.7s;--y:-25.2s;--x:23px"></span>
+      <span style="--s:2.8px;--l:69.7%;--d:39.5s;--y:-0.3s;--x:45px"></span>
+      <span style="--s:3.9px;--l:38.8%;--d:40.0s;--y:-46.9s;--x:-5px"></span>
+      <span style="--s:3.3px;--l:12.5%;--d:25.4s;--y:-11.1s;--x:-52px"></span>
+      <span style="--s:3.7px;--l:39.3%;--d:44.9s;--y:-44.1s;--x:-7px"></span>
+    </div>
+  </div>
+</div>
+
+<div id="progress" aria-hidden="true"></div>
+<!-- ══ NAV ══ -->
+<header class="nav-shell">
+  <nav class="nav" id="navbar">
+    <a class="nav-logo" href="#home">
+      <!-- <span class="logo-mark">SB</span> -->
+      <span class="logo-word">Sausan Berliana</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
-</nav>
 
-<!-- HERO -->
-<section id="home">
-  <div class="hero-bg-orb orb-a"></div>
-  <div class="hero-bg-orb orb-b"></div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch colour theme"><i class="fa fa-moon"></i></button>
+      <button class="icon-btn hamburger" id="ham" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+
   <div class="hero-inner">
-    <!-- Left -->
-    <div>
-      <h2 class="hero-name">Hi! I'm Sausan Berliana Arrizqi</h2>  
-      <h1 class="hero-title">
-        I'm a <span class="typed-wrap"><span id="typed"></span><span class="cursor-blink"></span></span>
-      </h1>
-        <p class="about-desc" style="text-align:justify;">
-          An <strong>Informatics Graduate </strong> from Universitas Diponegoro
-        </p>
-        <!-- <p class="about-desc" style="text-align:justify;">
-          I've spent the past few years working hands-on with <strong>machine learning and web development</strong>,
-          building real projects using <strong>Python, Scikit-learn, TensorFlow</strong> on the AI side, 
-          and <strong>Laravel, HTML, CSS, and JavaScript</strong> for the web.
-        </p> -->
-      <div class="hero-btns">
-        <a class="btn-white" href="#project"><i class="fa fa-eye"></i>Explore Projects</a>
-        <a class="btn-outline-white" href="#contact"><i class="fa fa-paper-plane"></i>Contact Me</a>
-      </div>
-      <div class="hero-stats">
-        <div><div class="hs-num">2+</div><div class="hs-label">Years of Experience</div></div>
-        <div><div class="hs-num">8+</div><div class="hs-label">Projects</div></div>
-        <div><div class="hs-num">5+</div><div class="hs-label">Certifications</div></div>
-      </div>
+
+    <div class="hero-head">
+      <h1 class="hero-hi rise" data-d="1">Hi, I'm Sausan</h1>
+      <p class="hero-job rise" data-d="2">
+        <span id="typed"></span><span class="caret"></span>
+      </p>
     </div>
-    <!-- Photo -->
-    <div class="hero-photo-wrap">
-      <div style="position:relative;">
-        <div class="photo-circle" id="photoCircle">
-          <img src="assets/img/sausan.jpg" alt="Sausan"/>
-        </div>
-      </div>
+
+    <div class="hero-portrait">
+      <picture>
+        <source srcset="assets/img/sausan-cutout.webp" type="image/webp">
+        <img src="assets/img/sausan-cutout.png" alt="Sausan Berliana Arrizqi">
+      </picture>
     </div>
+
+    <aside class="hero-col hero-col-left">
+      <span class="hero-avail rise" data-d="3">
+        <span class="dot"></span> Available for new opportunities
+      </span>
+ 
+      <div class="hero-roll rise" data-d="4">
+        <ul>
+          <li><b>2</b> Years of Experience</li>
+          <li><b>8</b> Projects</li>
+          <li><b>5</b> Certifications Earned</li>
+          <li><b>2</b> Years of Experience</li> <!-- repeat the first one -->
+        </ul>
+      </div>
+    </aside>
+
+    <aside class="hero-col hero-col-right">
+      <p class="hero-blurb rise" data-d="3">
+        I’ve explored different areas of tech, including exploring <b>machine learning</b> and 
+        building <b>full-stack applications</b>,
+        both of which I enjoy.
+      </p>
+
+      <a class="hero-cta rise" data-d="5" href="#project">
+        <i class="fa fa-arrow-right"></i> View my work
+      </a>
+    </aside>
+
   </div>
 </section>
 
-<!-- <hr class="divider"/> -->
+<!-- ══ TICKER ══ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Machine Learning · Deep Learning · Full-Stack Web Developer · Data Science · NLP · Software Engineering ·&nbsp;</span>
+    <span>Machine Learning · Deep Learning · Full-Stack Web Developer · Data Science · NLP · Software Engineering ·&nbsp;</span>
+  </div>
+</div>
 
-<!-- ABOUT -->
-<section id="about" class="section-pad">
+<!-- ══ ABOUT ══ -->
+<section id="about" class="section tint">
+  <div class="field field-about" aria-hidden="true"></div>
+
   <div class="container">
+    <header class="sec-head reveal">
+      <p class="label"><span class="num">01</span></p>
+      <h2 class="sec-title">About me</h2>
+    </header>
+
     <div class="about-grid">
-      <!-- Left card -->
-      <div class="about-img-card fade-in">
-        <div class="about-avatar" id="aboutAvatar">
-          <img src="assets/img/sausan.jpg" alt="Sausan"/>
-        </div>
-        <div class="about-name">Sausan Berliana Arrizqi</div>
-        <div class="about-role">AI/ML Engineer • Web Developer</div>
-        <div class="about-info-rows">
-          <div class="arow">
-            <div class="arow-icon"><i class="fa fa-graduation-cap"></i></div>
-            <div><div class="arow-label">University</div><div class="arow-val">Universitas Diponegoro</div></div>
-          </div>
-          <div class="arow">
-            <div class="arow-icon"><i class="fa fa-book"></i></div>
-            <div><div class="arow-label">Major</div><div class="arow-val">Bachelor of Computer Science</div></div>
-          </div>
-          <div class="arow">
-            <div class="arow-icon"><i class="fa fa-award"></i></div>
-            <div><div class="arow-label">GPA</div><div class="arow-val">3.89 / 4.00</div></div>
-          </div>
-          <div class="arow">
-            <div class="arow-icon"><i class="fa fa-calendar"></i></div>
-            <div><div class="arow-label">Study Duration</div><div class="arow-val">3 Years 7 Months</div></div>
-          </div>
-          <div class="arow">
-            <div class="arow-icon"><i class="fa fa-circle" style="color:#22c55e;font-size:.5rem;"></i></div>
-            <div><div class="arow-label">Availability</div><div class="arow-val" style="color:#16a34a;">Open to Work</div></div>
-          </div>
-        </div>
-      </div>
-      <!-- Right body -->
-      <div class="about-body fade-in d1">
-        <div class="eyebrow">About Me</div>
-        <h2 class="section-title">Informatics Graduate<br><span>& IT Enthusiast</span></h2>
-        <p class="about-desc">
-          I'm an Informatics graduate from Diponegoro University with a strong interest in Artificial Intelligence, Data Science, Web Development, and Software Engineering.
-        </p>
-        <p class="about-desc">
-           I've worked on AI/ML projects, full-stack web applications, and data-driven solutions, while also gaining experience in programming, database design, and system modeling. 
-          Beyond technical skills, I also enjoy collaborating with teams, leading organization projects, and solving real-world problems.
-        </p>
-        <p class="about-desc">
-          Currently I'm open to opportunities in <b>AI/ML, Data Science, Software Engineering,</b> and IT roles such as <b>System or Business Analyst.</b>
+      <div class="about-body reveal">
+        <p class="about-lede">
+          I’m a fresh Informatics graduate from Diponegoro University, 
+          with a <span class="hl">curiosity</span> for learning, building, and trying different things along the way.
         </p>
 
-        <!-- <div class="eyebrow">Area Expertise</div>
-          <div class="about-tags">
-            <span class="at p">Machine Learning</span><span class="at p">Deep Learning</span><span class="at p">Exploratory Data Analysis</span>
-            <span class="at p">Data Science</span>
-            <span class="at t">Web Development</span><span class="at t">Full-Stack Development</span><span class="at t">Software Engineering</span>
-            <span class="at i">UI/UX Design</span>
-        </div> -->
-        <div style="margin-top:2rem;">
-          <a class="btn-white" href="assets/CV_Sausan Berliana Arrizqi_General (Inggris).pdf" style="background:var(--pink);color:#fff;padding:.75rem 1.8rem;border-radius:100px;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;transition:opacity .2s;box-shadow:0 6px 20px rgba(233,30,140,.3);">
-            <i class="fa fa-download"></i>Curriculum Vitae (CV)
+        <p>
+          During my degree, I spent three semesters as a <b>laboratory assistant</b>, 
+          where I guided students in practical sessions for several subjects, such as Machine Learning, Computer Graphics and Visual, and Systems Fundamental. 
+          I also became active in <b>student organizations</b>, 
+          taking on responsibilities in finance for my department’s student association 
+          and leading publications for a national informatics competition with 99 participating teams.
+        </p>
+
+        <p> On the professional side, I interned at <b>PT Dirgantara Indonesia</b>, 
+          where I worked on a web-based asset management system. 
+          Along the way, I built an academic information system with five user roles, 
+          a customer segmentation dashboard, and a multimodal deep learning model for my undergraduate thesis. </p>
+
+        <div class="about-actions">
+          <a class="btn-ink" href="assets/CV_Sausan Berliana Arrizqi_General (Inggris).pdf" target="_blank">
+            Open my CV <i class="fa fa-arrow-up-right-from-square"></i>
           </a>
+          <p class="about-seeking">
+            Currently open to <b>Web Developer, Software Engineer, AI/ML Engineer, Data Scientist</b>,
+            or analyst roles.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-side reveal" data-d="1">
+        <figure class="about-photo">
+          <img src="assets/img/sausan-grad.jpg" alt="Sausan Berliana Arrizqi">
+          <figcaption>Sausan Berliana Arrizqi</figcaption>
+        </figure>
+      </div>
+    </div>
+      
+    <div class="about-facts-strip reveal">
+      <div class="fact-item">
+        <span class="fact-icon"><i class="fa fa-graduation-cap"></i></span>
+        <div>
+          <p class="fact-label">Education</p>
+          <p class="fact-value">Informatics, Diponegoro University</p>
+          <p class="fact-note">Aug 2022 – Apr 2026</p>
+        </div>
+      </div>
+      <div class="fact-item">
+        <span class="fact-icon"><i class="fa fa-award"></i></span>
+        <div>
+          <p class="fact-label">GPA</p>
+          <p class="fact-value">3.89 / 4.00</p>
+          <p class="fact-note"><i>Cumlaude</i></p>
+        </div>
+      </div>
+      <div class="fact-item">
+        <span class="fact-icon"><i class="fa fa-calendar"></i></span>
+        <div>
+          <p class="fact-label">Study Duration</p>
+          <p class="fact-value">3 Years 7 Months</p>
+        </div>
+      </div>
+      <div class="fact-item">
+        <span class="fact-icon"><i class="fa fa-location-dot"></i></span>
+        <div>
+          <p class="fact-label">Based in</p>
+          <p class="fact-value">Rembang, Central Java</p>
+          <p class="fact-note">Open to relocate</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <hr class="divider"/> -->
-
-<!-- PORTFOLIO -->
-<section id="project" class="section-pad">
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience" class="section tint">
   <div class="container">
-    <div class="port-header fade-in">
-      <div>
-        <div class="eyebrow">Project Highlights</div>
-        <h2 class="section-title">Featured <span>Projects</span></h2>
-      </div>
-      <div class="filter-wrap">
-        <button class="fbtn active" onclick="filterP('all',this)">All</button>
-        <button class="fbtn" onclick="filterP('ml',this)">ML / AI</button>
-        <button class="fbtn" onclick="filterP('web',this)">Web App</button>
-        <button class="fbtn" onclick="filterP('uiux',this)">UI / UX</button>
+
+    <header class="sec-head reveal">
+      <p class="label"><span class="num">02</span></p>
+      <h2 class="sec-title">Experience</h2>
+    </header>
+
+    <!-- EXPERIENCE FILTER -->
+    <div class="exp-filter reveal" role="tablist" aria-label="Experience categories">
+      <button
+        class="exp-filter-btn active"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        data-filter="overview">
+        <span>Overview</span>
+        <small>5</small>
+      </button>
+
+      <button
+        class="exp-filter-btn"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-filter="education">
+        <span>Education</span>
+        <small>1</small>
+      </button>
+
+      <button
+        class="exp-filter-btn"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-filter="work">
+        <span>Work</span>
+        <small>4</small>
+      </button>
+
+      <button
+        class="exp-filter-btn"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-filter="organization">
+        <span>Organization</span>
+        <small>2</small>
+      </button>
+
+      <button
+        class="exp-filter-btn"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-filter="committee">
+        <span>Committee</span>
+        <small>10</small>
+      </button>
+
+    </div>
+
+
+    <!-- EXPERIENCE CONTENT -->
+    <div class="exp-content reveal">
+
+    <!-- ══════ EDU ══════ -->
+    <div class="exp-category" data-category="education">
+      <h3 class="exp-category-title">Education</h3>
+      <div class="exp-timeline">
+        
+        <div class="exp-item">
+          <span class="exp-node"></span>
+          <article class="exp-card glass">
+            <div class="exp-card-head">
+              <div class="exp-identity-group">
+                <div class="exp-logo">
+                  <img src="assets/img/logos/undip.png" alt="Universitas Diponegoro">
+                </div>
+                <div class="exp-identity">
+                  <h4 class="exp-role">Bachelor of Computer Science</h4>
+                  <p class="exp-org">Universitas Diponegoro · Semarang</p>
+                </div>
+              </div>
+              <time class="exp-date">Aug 2022 — Mar 2026</time>
+            </div>
+
+            <ul class="exp-points">
+              <li>
+                GPA 3.89 / 4.00
+              </li>
+              <li>
+                Undergraduate Thesis: Fake and Real User Classification on Twitter Using a Multimodal Model Based on LSTM
+                and MLP with a Late Fusion Approach
+              </li>
+              <li>
+                Relevant coursework: Software Engineering, Platform-Based Development,
+                Machine Learning, Natural Language Processing, Data Mining, Information Retrieval, 
+                Data Structures, Algorithms
+              </li>
+            </ul>
+          </article>
+        </div>
       </div>
     </div>
+
+
+      <!-- ══════ WORK ══════ -->
+      <div class="exp-category" data-category="work">
+        <h3 class="exp-category-title">Work</h3>
+        <div class="exp-timeline">
+
+          <!-- PTDI -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img
+                      src="assets/img/logos/ptdi.png"
+                      alt="PT Dirgantara Indonesia">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Web Developer (Internship)</h4>
+                    <p class="exp-org">PT Dirgantara Indonesia (Persero) · Bandung</p>
+                  </div>
+                </div>
+                <time class="exp-date">Jan 2025 — Feb 2025</time>
+              </div>
+
+              <ul class="exp-points">
+                <li>
+                  Developed a web-based Fixed Asset Management System for PT. Dirgantara Indonesia's IT Division, handling
+                  end-to-end development from requirements gathering to deployment.               
+                </li>
+                <li>
+                  Built core features including asset CRUD, QR-based asset identification, damage reporting, and real-time monitoring using Laravel and MySQL.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="exp-item">
+            <span class="exp-node"></span>
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img
+                      src="assets/img/logos/undip.png"
+                      alt="Universitas Diponegoro">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Machine Learning Laboratory Assistant</h4>
+                    <p class="exp-org">Universitas Diponegoro · Semarang</p>
+                  </div>
+                </div>
+                <time class="exp-date">Sep 2025 — Nov 2025</time>
+              </div>
+
+              <ul class="exp-points">
+                <li>
+                  Mentored students in building end-to-end ML projects using Scikit-Learn and Pandas, handling debugging and data preprocessing pipelines.
+                </li>
+                <li>
+                  Evaluated student assignments and projects, providing feedback on pipeline design, model selection, 
+                  and the technical rationale behind every hyperparameter choice.                
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="exp-item">
+            <span class="exp-node"></span>
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img
+                      src="assets/img/logos/undip.png"
+                      alt="Universitas Diponegoro">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Computer Graphics &amp; Visual Computing Laboratory Assistant</h4>
+                    <p class="exp-org">Universitas Diponegoro · Semarang</p>
+                  </div>
+                </div>
+                <time class="exp-date">Feb 2025 — May 2025</time>
+              </div>
+              <ul class="exp-points">
+                <li>
+                  Delivered 10 hands-on OpenGL modules to 20+ students covering
+                  2D/3D modelling, transformations, lighting, texturing,
+                  and rendering.
+                </li>
+                <li>
+                  Guided students through C++/OpenGL environment setups and core mathematical concepts like matrix transformations and lighting algorithms.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="exp-item">
+            <span class="exp-node"></span>
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img
+                      src="assets/img/logos/undip.png"
+                      alt="Universitas Diponegoro">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Systems Fundamentals Laboratory Assistant</h4>
+                    <p class="exp-org">Universitas Diponegoro · Semarang</p>
+                  </div>
+                </div>
+                <time class="exp-date">Aug 2023 — Dec 2023</time>
+              </div>
+              <ul class="exp-points">
+                <li>
+                  Assisted in delivering materials and fundamental concepts to students
+                  supported problem-solving activities, and helped prepare modules and assignments for the practicum sessions.
+                </li>
+                <li>
+                  Graded weekly lab reports and provided continuous feedback to support student academic progress.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ══════ ORGANIZATION ══════ -->
+      <div class="exp-category" data-category="organization">
+        <h3 class="exp-category-title">Organization</h3>
+        <div class="exp-timeline">
+          <div class="exp-item">
+            <span class="exp-node"></span>
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img
+                      src="assets/img/logos/hmif.png"
+                      alt="Himpunan Mahasiswa Informatika">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">
+                      Expert Staff of Advocacy &amp; Student Welfare, Social Division
+                    </h4>
+                    <p class="exp-org">
+                      Himpunan Mahasiswa Informatika (HMIF) UNDIP · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Feb 2024 — Dec 2024</time>
+              </div>
+              <ul class="exp-points">
+                <li>
+                  Contributed to student welfare development by sharing scholarship information, organizing social fundraisers, and providing guidance to students.
+                </li>
+                <li>
+                  Facilitated a student-department forum with 100+ students and 90% of Informatics lecturers to advocate for improved student welfare and academic support.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+
+          <div class="exp-item">
+            <span class="exp-node"></span>
+              <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img
+                      src="assets/img/logos/hmif.png"
+                      alt="Himpunan Mahasiswa Informatika">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">
+                      Treasurer of Social Division
+                    </h4>
+                    <p class="exp-org">
+                      Himpunan Mahasiswa Informatika (HMIF) UNDIP · Semarang
+                  </p>
+                  </div>
+                </div>
+                <time class="exp-date">
+                  Feb 2023 — Dec 2023
+                </time>
+              </div>
+              <ul class="exp-points">
+                <li>
+                  Managed budgeting, fund allocation, and financial reporting for a six-month program series, ensuring transparent record-keeping.
+                </li>
+                <li>
+                  Reduced division expenses by 10% by reallocating budget to high-priority needs and cutting redundant costs while maintaining event quality.
+                </li>
+              </ul>
+            </article>
+          </div>
+      </div>
+    </div>
+
+      <!-- ══════ COMMITTEE ══════ -->
+      <div class="exp-category" data-category="committee">
+        <h3 class="exp-category-title">Committee</h3>
+        <div class="exp-timeline">
+
+          <!-- Item 1: I-CONSOLE (Main Treasurer) -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/hmif.png" alt="HMIF Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Main Treasurer</h4>
+                    <p class="exp-org">
+                      Informatics Concept Socialization (I-CONSOLE) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Jun 2024 — Dec 2024</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 2: LKKMD FSM UNDIP -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/bem-fsm.png" alt="LKKMD FSM UNDIP Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Mentor in Advocacy and Welfare Division</h4>
+                    <p class="exp-org">
+                      Latihan Kepemimpinan dan Keterampilan Dasar (LKKMD) FSM UNDIP · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">May 2024 — Dec 2024</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 3: ANFORCOM -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/anforcom.png" alt="ANFORCOM Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Head of Publication Division</h4>
+                    <p class="exp-org">
+                      Annual Informatics Competition (ANFORCOM) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">May 2024 — Sep 2024</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 4: I-CARE -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/hmif.png" alt="Social Division Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Head of Publication, Design &amp; Documentation (PDD)</h4>
+                    <p class="exp-org">
+                      Informatics Care (I-CARE) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Apr 2024 — Jun 2024</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 5: INFO -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/hmif.png" alt="Social Division Logo">
+                  </div>
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Head of Publication, Design &amp; Documentation (PDD)</h4>
+                    <p class="exp-org">
+                      Informatics for the Orphanage (INFO) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Feb 2024 — Apr 2024</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 6: I-CONSOLE (Student Mentor) -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/hmif.png" alt="HMIF Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Student Mentor</h4>
+                    <p class="exp-org">
+                      Informatics Concept Socialization (I-CONSOLE) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Jul 2023 — Feb 2024</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 7: I-GATE -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/igate.png" alt="I-GATE Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Public Relations Staff</h4>
+                    <p class="exp-org">
+                      Informatics Gathering (I-GATE) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Sep 2023 — Dec 2023</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 8: LKKM-PD -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                      <img src="assets/img/logos/hmif.png" alt="HMIF Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Moderator of Stress Management Session</h4>
+                    <p class="exp-org">
+                      LKKM-PD of Informatics UNDIP · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Sep 2023</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 9: ICARE TREASURER -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/hmif.png" alt="HMIF Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Treasurer</h4>
+                    <p class="exp-org">
+                      Informatics Care (I-CARE) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Apr 2023 – Jun 2023</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 10: INFO TREASURER -->
+          <div class="exp-item">
+            <span class="exp-node"></span>
+
+            <article class="exp-card glass">
+              <div class="exp-card-head">
+                <div class="exp-identity-group">
+                  <div class="exp-logo">
+                    <img src="assets/img/logos/hmif.png" alt="HMIF Logo">
+                  </div>
+                  <div class="exp-identity">
+                    <h4 class="exp-role">Treasurer</h4>
+                    <p class="exp-org">
+                      Informatics for the Orphanage (INFO) · Semarang
+                    </p>
+                  </div>
+                </div>
+
+                <time class="exp-date">Feb 2023 – Apr 2023</time>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LINKEDIN -->
+    <div class="tl-more reveal">
+      Full detail on
+      <a
+        href="https://www.linkedin.com/in/sausan-berliana-arrizqi"
+        target="_blank"
+        rel="noopener">
+        LinkedIn
+        <i class="fa fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ PROJECTS ══ -->
+<section id="project" class="section tint">
+  <!-- <div class="field field-soft" aria-hidden="true"><span class="blob b7"></span><span class="blob b6"></span></div> -->
+  <div class="container">
+    <header class="sec-head sec-head-row reveal">
+      <div>
+        <p class="label"><span class="num">03</span></p>
+        <h2 class="sec-title">Selected projects</h2>
+      </div>
+      <div class="segmented" id="projSeg">
+        <button class="seg active" onclick="filterP('all',this)">All</button>
+        <button class="seg" onclick="filterP('ml',this)">ML / AI</button>
+        <button class="seg" onclick="filterP('web',this)">Web</button>
+        <button class="seg" onclick="filterP('uiux',this)">UI / UX</button>
+      </div>
+    </header>
 
     <div class="port-grid" id="pgrid">
-      <div class="pcard fade-in" data-cat="ml" onclick="openProject('thesis')">
+      <article class="pcard reveal" data-cat="ml"
+        data-role="Undergraduate Thesis"
+        data-period="Oct 2025 - Mar 2026"
+        data-type="Undergraduate thesis"
+        onclick="openProject('thesis')">
         <div class="pthumb">
-            <img src="assets/img/ta/grafik_dl.png" alt="Fake Twitter Classification">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-            </div>
+          <img src="assets/img/ta/mockup.png" alt="Fake Twitter account classification"/>
         </div>
         <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis public"><i class="fa fa-globe"></i>Public</span>
-            Undergraduate Thesis
-          </div>
-          <div class="ptitle">
-            Fake vs Real Twitter Account Classification
-          </div>
-          <div class="pdesc">
-            Developed a multimodal deep learning model combining tweet text and user metadata, achieving 99.20% accuracy on Cresci-2017.
-          </div>
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis public">Public</span>
+              <span>Undergraduate thesis</span>
+            </span>
+            <span class="pmeta-date">Oct 2025 - Mar 2026</span>
+          </p>
+          <h3 class="ptitle">Fake and Real Twitter Account Classification</h3>
+          <p class="pdesc">
+            <b>Multimodal deep learning model</b> combining tweet text and account metadata to classify fake and real Twitter users.
+          </p>
           <div class="pstack">
-            <span class="ps">Python</span>
-            <span class="ps">TensorFlow</span>
-            <span class="ps">Keras</span>
             <span class="ps">LSTM</span>
             <span class="ps">MLP</span>
             <span class="ps">GloVe</span>
-            <span class="ps">Pandas</span>
-            <span class="ps">Scikit-learn</span>
           </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
         </div>
-      </div>
+      </article>
 
-      <div class="pcard fade-in d1" data-cat="web" onclick="openProject('intern')">
+      <article class="pcard reveal" data-cat="ml"
+        data-role="Course Project"
+        data-period="Dec 2025"
+        data-type="Course project"
+        onclick="openProject('music')">
         <div class="pthumb">
-          <img src="assets/img/pkl/pkl-preview.png" alt="Fixed Asset Management System">
-          <div class="pthumb-overlay">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-              </span> 
-            </div>
-          </div>
+          <img src="assets/img/music/mockup.png" alt="Music recommendation system"/>
         </div>
         <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis private"><i class="fa fa-lock"></i>Private</span>
-            Internship Project</div>
-            <div class="ptitle">
-            Fixed Asset Management System (PT Dirgantara Indonesia)
-            </div>
-            <div class="pdesc">
-            Developed a web-based asset management system with QR code tracking and damage reporting to simplify asset monitoring across multiple categories.
-            </div>
-
-            <div class="pstack">
-                <span class="ps">Laravel</span>
-                <span class="ps">Bootstrap</span>
-                <span class="ps">HTML/CSS</span>
-                <span class="ps">PHP</span>
-                <span class="ps">JavaScript</span>
-                <span class="ps">MySQL</span>
-                <span class="ps">phpMyAdmin</span>
-            </div>
-        </div>
-      </div>
-
-      <div class="pcard fade-in d2" data-cat="web" onclick="openProject('magistra')">
-        <div class="pthumb">
-          <img src="assets/img/magistra/mag-login.png" alt="MAGISTRA">
-          <div class="pthumb-overlay">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-            </div>
-          </div>
-        </div>
-        <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis public"><i class="fa fa-globe"></i>Public</span>
-            Course Project
-          </div>
-          <div class="ptitle">
-            MAGISTRA (Academic Management Information System)
-          </div>
-          <div class="pdesc">
-            Developed a web-based academic information system that streamlines course registration, schedule creation, and approval workflows across 5 user roles.
-          </div>
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis public">Public</span>
+              <span>Course project</span>
+            </span>
+            <span class="pmeta-date">Dec 2025</span>
+          </p>
+          <h3 class="ptitle">Content-Based Music Recommendation</h3>
+          <p class="pdesc">
+            Music recommendation system based on audio features, designed to work without user listening history.
+          </p>
           <div class="pstack">
-              <span class="ps">Laravel</span>
-              <span class="ps">React</span>
-              <span class="ps">TypeScript</span>
-              <span class="ps">Inertia.js</span>
-              <span class="ps">Tailwind CSS</span>
-              <span class="ps">PHP</span>
-              <span class="ps">MySQL</span>
+            <span class="ps">Librosa</span>
+            <span class="ps">SVM</span>
+            <span class="ps">PCA</span>
           </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
         </div>
-      </div>
+      </article>
 
-      <div class="pcard fade-in" data-cat="ml" onclick="openProject('segmentation')">
+            <article class="pcard reveal" data-cat="web"
+        data-role="Community Project"
+        data-period="Jul 2025 – Aug 2025"
+        data-type="KKN Project"
+        onclick="openProject('lanjan')">
         <div class="pthumb">
-          <img src="assets/img/segmentation/streamlit.png" alt="Customer Segmentation">
-          <div class="pthumb-overlay">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-            </div>
-          </div>
+          <img src="assets/img/lanjan/mockup.png" alt="Kopi Lanjan"/>
         </div>
         <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis public"><i class="fa fa-globe"></i>Public</span>
-            Course Project
-          </div>
-            <div class="ptitle">
-            Customer Segmentation
-            </div>
-            <div class="pdesc">
-            Segmented customers using RFM analysis and K-Means clustering to support targeted marketing strategies.
-            </div>
-            <div class="pstack">
-                <span class="ps">Python</span>
-                <span class="ps">Streamlit</span>
-                <span class="ps">Scikit-learn</span>
-                <span class="ps">K-Means</span>
-                <span class="ps">RFM</span>
-                <span class="ps">Pandas</span>
-                <span class="ps">Matplotlib</span>
-            </div>
-        </div>
-      </div>
-
-      <div class="pcard fade-in d1" data-cat="ml" onclick="openProject('music')">
-        <div class="pthumb">
-          <img src="assets/img/music/cm.png" alt="Music Recommendation System">
-          <div class="pthumb-overlay">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-            </div>
-          </div>
-        </div>
-        <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis public"><i class="fa fa-globe"></i>Public</span>
-            Course Project
-          </div>
-          <div class="ptitle">Content-Based Music Recommendation System</div>
-          <div class="pdesc">
-            Built a recommendation engine using audio features and similarity analysis to recommend songs.
-          </div>
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis public">Public</span>
+              <span>KKN Project</span>
+            </span>
+            <span class="pmeta-date">Jul 2025 – Aug 2025</span>
+          </p>
+          <h3 class="ptitle">Kopi Lanjan Branding Website</h3>
+          <p class="pdesc">
+            Branding website for a local coffee bean farmer to showcase products and expand their online presence.
+          </p>
           <div class="pstack">
-              <span class="ps">Python</span>
-              <span class="ps">Librosa</span>
-              <span class="ps">Scikit-learn</span>
-              <span class="ps">SVM</span>
-              <span class="ps">PCA</span>
-              <span class="ps">Pandas</span>
+            <span class="ps">HTML/CSS</span>
+            <span class="ps">JavaScript</span>
+            <span class="ps">Netlify</span>
           </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
         </div>
-      </div>
+      </article>
 
-      <div class="pcard fade-in d2" data-cat="web" onclick="openProject('lanjan')">
+      <article class="pcard reveal" data-cat="web"
+        data-role="Web Developer"
+        data-period="Jan 2025 – Feb 2025"
+        data-type="Internship"
+        onclick="openProject('intern')">
         <div class="pthumb">
-          <img src="assets/img/lanjan/landing-page.png" alt="Kopi Lanjan Branding Website">
-          <div class="pthumb-overlay">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-            </div>
-          </div>
+          <img src="assets/img/pkl/pkl-mockup.png" alt="Fixed Asset Management System"/>
         </div>
         <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis public"><i class="fa fa-globe"></i>Public</span>
-            KKN Project
-          </div>         
-          <div class="ptitle">Kopi Lanjan Branding Website</div>
-          <div class="pdesc">
-            Designed and developed a branding website to promote local coffee products and strengthen village marketing.
-          </div>
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis private">Private</span>
+              <span>Internship</span>
+            </span>
+            <span class="pmeta-date">Jan 2025 – Feb 2025</span>
+          </p>
+          <h3 class="ptitle">Fixed Asset Management System</h3>
+          <p class="pdesc">
+            Web-based asset management system for the IT Division, built to simplify asset tracking and damage reporting across 12 asset categories.
+          </p>
           <div class="pstack">
-              <span class="ps">HTML/CSS</span>
-              <span class="ps">JavaScript</span>
-              <span class="ps">Netlify</span>
-              <span class="ps">CMS</span>
+            <span class="ps">Laravel</span>
+            <span class="ps">PHP</span>
+            <span class="ps">MySQL</span>
           </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
         </div>
-      </div>
+      </article>
 
-      <div class="pcard fade-in d2 hidden-project" data-cat="ml" onclick="openProject('sentiment')">
+      <article class="pcard reveal" data-cat="ml"
+        data-role="Course Project"
+        data-period="Nov 2024 – Dec 2024"
+        data-type="Course project"
+        onclick="openProject('segmentation')">
         <div class="pthumb">
-          <img src="assets/img/tokped/wordcloud.png" alt="Word Cloud of Positive Sentiment">
-          <div class="pthumb-overlay">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-            </div>
-          </div>
+          <img src="assets/img/segmentation/mockup.png" alt="Customer segmentation"/>
         </div>
         <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis public"><i class="fa fa-globe"></i>Public</span>
-            Course Project
-          </div>          
-          <div class="ptitle">Sentiment Analysis of Tokopedia Reviews</div>
-          <div class="pdesc">
-            Built a sentiment classification model for Indonesian e-commerce reviews using transformer-based text embeddings.
-          </div>
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis public">Public</span>
+              <span>Course project</span>
+            </span>
+            <span class="pmeta-date">Nov 2024 – Dec 2024</span>
+          </p>
+          <h3 class="ptitle">Customer Segmentation with RFM &amp; K-Means</h3>
+          <p class="pdesc">
+            Customer segmentation system that turns transaction data into actionable customer groups through a Streamlit app.
+          </p>
           <div class="pstack">
-              <span class="ps">Python</span>
-              <span class="ps">IndoBERT</span>
-              <span class="ps">HuggingFace</span>
-              <span class="ps">Scikit-learn</span>
-              <span class="ps">Pandas</span>
-              <span class="ps">PyTorch</span>
+            <span class="ps">Python</span>
+            <span class="ps">K-Means</span>
+            <span class="ps">Streamlit</span>
           </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
         </div>
-      </div>
+      </article>
 
-      <div class="pcard fade-in d2 hidden-project" data-cat="uiux" onclick="openProject('sikecil')">
+      <article class="pcard reveal" data-cat="web"
+        data-period="Aug 2024 – Dec 2024"
+        data-type="Course project"
+        onclick="openProject('magistra')">
         <div class="pthumb">
-          <img src="assets/img/sikecil/Poster-1.png" alt="SiKecil">
-          <div class="pthumb-overlay">
-            <div class="pthumb-overlay">
-              <span class="ov-btn">
-                <i class="fa fa-eye"></i>View Details</span>             
-            </div>
-          </div>
+          <img src="assets/img/magistra/mockup.png" alt="MAGISTRA"/>
         </div>
         <div class="pbody">
-          <div class="pcat">
-            <span class="pcat-vis private"><i class="fa fa-lock"></i>Private</span>
-            UI/UX Competition
-          </div>          
-          <div class="ptitle">SiKecil</div>
-          <div class="pdesc">
-            Designed the UI/UX of a mobile app to help parents monitor children's growth and daily activities.
-          </div>
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis public">Public</span>
+              <span>Course project</span>
+            </span>
+            <span class="pmeta-date">Aug 2024 – Dec 2024</span>
+          </p>
+          <h3 class="ptitle">MAGISTRA — Academic Information System</h3>
+          <p class="pdesc">
+            Academic information system for course registration and approval across five user roles.
+          </p>
           <div class="pstack">
-              <span class="ps">Figma</span>
-              <span class="ps">UI Design</span>
-              <span class="ps">UX Design</span>
-              <span class="ps">Prototyping</span>
-              <span class="ps">Design Thinking</span>
-              <span class="ps">UEQ</span>
+            <span class="ps">Laravel</span>
+            <span class="ps">MySQL</span>
+            <span class="ps">TypeScript</span>
           </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
         </div>
-      </div>
+      </article>
+
+      <article class="pcard reveal hidden-project" data-cat="uiux"
+        data-role="UI/UX Competition"
+        data-period="Mar 2025 – Aug 2025"
+        data-type="UI/UX competition"
+        onclick="openProject('sikecil')">
+        <div class="pthumb">
+          <img src="assets/img/sikecil/mockup.png" alt="SiKecil"/>
+        </div>
+        <div class="pbody">
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis private">Private</span>
+              <span>UI/UX competition</span>
+            </span>
+            <span class="pmeta-date">Mar 2025 – Aug 2025</span>
+          </p>
+          <h3 class="ptitle">SiKecil — Child Growth Monitoring</h3>
+          <p class="pdesc">
+            Mobile UX concept for helping parents track their child's growth quickly and easily.
+          </p>
+          <div class="pstack">
+            <span class="ps">Figma</span>
+            <span class="ps">Prototyping</span>
+          </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
+        </div>
+      </article>
+
+      <article class="pcard reveal hidden-project" data-cat="ml"
+        data-role="Course Project"
+        data-period="May 2025"
+        data-type="Course project"
+        onclick="openProject('sentiment')">
+        <div class="pthumb">
+          <img src="assets/img/tokped/mockup.png" alt="Sentiment analysis"/>
+        </div>
+        <div class="pbody">
+          <p class="pmeta">
+            <span class="pmeta-left">
+              <span class="vis public">Public</span>
+              <span>Course project</span>
+            </span>
+            <span class="pmeta-date">May 2025</span>
+          </p>
+          <h3 class="ptitle">Sentiment Analysis of Tokopedia Reviews</h3>
+          <p class="pdesc">
+            Indonesian e-commerce sentiment analysis using a fine-tuned transformer model for informal customer reviews.
+          </p>
+          <div class="pstack">
+            <span class="ps">IndoBERT</span>
+            <span class="ps">HuggingFace</span>
+            <span class="ps">PyTorch</span>
+          </div>
+          <span class="pgo">
+            View details <i class="fa fa-arrow-right"></i>
+          </span>
+        </div>
+      </article>
+
     </div>
-      <div class="portfolio-more">
-          <button id="viewMoreBtn" class="btn-view-more" onclick="toggleProjects()">
-              View All 8 Projects
-              <i class="fa fa-chevron-down"></i>
-          </button>
-      </div>
+
+    <div class="portfolio-more">
+      <button id="viewMoreBtn" class="btn btn-line" onclick="toggleProjects()">
+        View all projects <i class="fa fa-chevron-down"></i>
+      </button>
+    </div>
   </div>
 </section>
 
-<!-- ================= PROJECT MODAL ================= -->
+<!-- ══ PROJECT MODAL ══ -->
 <div id="projectModal" class="project-modal">
-  <div class="project-box">
-    <button class="modal-close" onclick="closeProject()">
+
+  <div class="project-box glass">
+
+    <button
+      class="modal-close"
+      onclick="closeProject()"
+      aria-label="Close">
       <i class="fa fa-times"></i>
     </button>
 
-<!-- Header -->
-<div class="project-header">
-  <div class="project-header-top">
-    <p id="modalVisibility" class="project-visibility"></p>
-    <span id="modalBadge" class="project-badge"></span>
+
+    <!-- HEADER -->
+    <div class="project-header">
+      <div class="project-header-top">
+        <p id="modalVisibility" class="project-visibility"></p>
+        <span id="modalBadge" class="project-badge"></span>
+        <time id="modalTimeline" class="project-timeline"></time>
+      </div>
+      <h2 id="modalTitle"></h2>
+    </div>
+
+
+    <!-- GALLERY -->
+    <div class="project-gallery">
+
+      <button
+        class="gallery-btn prev"
+        onclick="prevImage()"
+        aria-label="Previous image">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+
+      <img
+        id="galleryImage"
+        src=""
+        alt="Project preview">
+
+      <button
+        class="gallery-btn next"
+        onclick="nextImage()"
+        aria-label="Next image">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+
+      <div id="galleryDots" class="gallery-dots"></div>
+
+    </div>
+
+
+    <!-- OVERVIEW -->
+    <div class="project-section">
+      <h3>Overview</h3>
+      <p id="modalOverview"></p>
+    </div>
+
+
+    <!-- PROBLEM -->
+    <div class="project-section">
+      <h3>Problem</h3>
+      <p id="modalProblem"></p>
+    </div>
+
+
+    <!-- SOLUTION -->
+    <div class="project-section">
+      <h3>Solution</h3>
+      <p id="modalSolution"></p>
+    </div>
+
+
+    <!-- CONTRIBUTIONS -->
+    <div class="project-section">
+      <h3>My role &amp; contributions</h3>
+      <ul id="modalContributions"></ul>
+    </div>
+
+    
+    <!-- TECH STACK -->
+    <div class="project-section">
+      <h3>Tech stack</h3>
+      <div id="modalStack" class="modal-tags"></div>
+    </div>
+    
+    <!-- OUTCOME -->
+    <div class="project-section outcome-section">
+
+      <h3>Outcome</h3>
+
+      <div id="modalHighlights" class="highlight-grid"></div>
+
+    </div>
+
+
+    <!-- LINKS -->
+    <div class="project-section project-links-section">
+      <div id="modalLinks" class="project-links"></div>
+    </div>
+
+
+
   </div>
-  <h2 id="modalTitle"></h2>
+
 </div>
 
-<!-- Gallery -->
-<div class="project-gallery">
-  <button class="gallery-btn prev" onclick="prevImage()">
-    <i class="fa fa-chevron-left"></i>
-  </button>
-  <img id="galleryImage" src="" alt="Project Preview">
-  <button class="gallery-btn next" onclick="nextImage()">
-    <i class="fa fa-chevron-right"></i>
-  </button>
-  <div id="galleryDots" class="gallery-dots"></div>
-</div>
+<section id="skills" class="section">
+  <div class="field field-skills" aria-hidden="true"></div>
 
-<!-- Overview -->
-<div class="project-section">
-  <h3>Overview</h3>
-  <p id="modalOverview"></p>
-</div>
-
-<!-- Problem -->
-<div class="project-section">
-  <h3>Problem</h3>
-  <p id="modalProblem"></p>
-</div>
-
-<!-- Problem -->
-<div class="project-section">
-  <h3>Solution</h3>
-  <p id="modalSolution"></p>
-</div>
-
-<!-- Contributions -->
-<div class="project-section">
-  <h3>Key Contributions</h3>
-  <ul id="modalContributions">
-  </ul>
-</div>
-
-<!-- Tech Stack -->
-<div class="project-section">
-  <h3>Tech Stack</h3>
-  <div id="modalStack" class="modal-tags"></div>
-</div>
-
-<!-- Highlights -->
-<div class="project-section">
-  <h3>Project Highlights</h3>
-  <div id="modalHighlights" class="highlight-grid"></div>
-</div>
-
-<!-- Links -->
-<div class="project-section">
-    <div id="modalLinks" class="project-links"></div>
-</div>
-
-  </div>
-</div>
-
-<!-- <hr class="divider"/> -->
-
-
-<!-- SKILLS -->
-<!-- <section id="skills" class="section-pad">
   <div class="container">
-    <div class="srv-header fade-in">
-      <div>
-        <div class="eyebrow"><i class="fa fa-star"></i> My Expertise</div>
-        <h2 class="section-title">Technology<br><span>Stacks</span></h2>
+    <header class="sec-head reveal">
+      <p class="label"><span class="num">04</span></p>
+      <h2 class="sec-title">Skills</h2>
+    </header>
+
+    <div class="skill-groups">
+      <!-- 01 — LANGUAGES --> 
+      <div class="skill-row reveal">
+          <div class="skill-head">
+            <p class="skill-index">01</p>
+            <p class="skill-title">Languages</p>
+          </div>
+        <div class="chips"> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" /> Python </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" /> PHP </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" /> JavaScript </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" /> TypeScript </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL" /> SQL </span> 
+        </div> 
+      </div> 
+    
+    <!-- 02 — FRONTEND --> 
+      <div class="skill-row reveal"> 
+        <div class="skill-head"> 
+          <p class="skill-index">02</p> 
+          <p class="skill-title">Frontend</p>
+        </div> 
+        <div class="chips"> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" /> HTML5 </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" /> CSS3 </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" /> React </span>
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" /> Tailwind CSS </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" /> Bootstrap </span> 
+        </div> 
+      </div> 
+      
+      <!-- 03 — BACKEND & DATABASE --> 
+      <div class="skill-row reveal">
+        <div class="skill-head"> 
+          <p class="skill-index">03</p> 
+          <p class="skill-title">Backend &amp; Database</p> 
+        </div> 
+        <div class="chips"> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" /> Laravel </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" /> MySQL </span> 
+          <span class="chip"> <img src="https://cdn.simpleicons.org/postman" alt="Postman" /> Postman </span> 
+          <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" alt="Selenium" /> Selenium </span> 
+          <span class="chip chip-text"> REST APIs </span> 
+        </div> 
+      </div> 
+    
+    <!-- 04 — MACHINE LEARNING --> 
+     <div class="skill-row reveal"> 
+      <div class="skill-head"> 
+        <p class="skill-index">04</p> 
+        <p class="skill-title">Machine Learning</p> 
+      </div> 
+      <div class="chips"> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" /> TensorFlow </span> 
+        <span class="chip"> <img src="https://cdn.simpleicons.org/keras" alt="Keras" /> Keras </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" /> PyTorch </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" /> Scikit-learn </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" /> Pandas </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="NumPy" /> NumPy </span> 
+      </div> 
+    </div> 
+    <!-- 05 — TOOLS --> 
+     <div class="skill-row reveal"> 
+      <div class="skill-head"> 
+        <p class="skill-index">05</p> 
+        <p class="skill-title">Tools</p> 
+      </div> <div class="chips"> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" /> Git </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" /> VS Code </span> 
+        <span class="chip"> <img src="https://cdn.simpleicons.org/xampp" alt="XAMPP" /> XAMPP </span>
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" /> Figma </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" alt="Streamlit" /> Streamlit </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg" alt="Jupyter" /> Jupyter </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kaggle/kaggle-original.svg" alt="Kaggle" /> Kaggle </span> 
+        <span class="chip"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" /> Docker </span> 
       </div>
-      <p class="section-sub">Dari desain antarmuka yang intuitif hingga model machine learning yang powerful — siap bantu wujudkan ideamu.</p>
     </div>
-    <div class="srv-grid">
-      <div class="srv-card fade-in d1">
-        <div class="srv-icon a">🎨</div>
-        <div class="srv-name">UI / UX Design</div>
-        <div class="srv-desc">Merancang pengalaman pengguna yang intuitif dan visual yang menarik — dari wireframe hingga high-fidelity prototype di Figma.</div>
-      </div>
-      <div class="srv-card fade-in d2">
-        <div class="srv-icon b">🌐</div>
-        <div class="srv-name">Web Development</div>
-        <div class="srv-desc">Membangun website responsif dan modern menggunakan HTML/CSS/JavaScript serta aplikasi back-end berbasis Flask dan Python.</div>
-      </div>
-      <div class="srv-card fade-in d3">
-        <div class="srv-icon c">🤖</div>
-        <div class="srv-name">Machine Learning</div>
-        <div class="srv-desc">Mengembangkan model deep learning (LSTM, MLP, multimodal) untuk klasifikasi, deteksi, dan analisis teks menggunakan TensorFlow.</div>
-      </div>
-      <div class="srv-card fade-in d4">
-        <div class="srv-icon d">📊</div>
-        <div class="srv-name">Data Analysis</div>
-        <div class="srv-desc">Mengolah, membersihkan, dan memvisualisasikan data untuk menghasilkan insight bermakna menggunakan Pandas, Seaborn, dan Matplotlib.</div>
-      </div>
-    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══ CERTIFICATION ══ -->
+<section id="certificates" class="section">
+  <div class="container">
+    <header class="sec-head reveal">
+      <p class="label"><span class="num">05</span></p>
+      <h2 class="sec-title">Certifications</h2>
+    </header>
+
+    <div class="cert-list" id="certGrid"></div>
   </div>
 </section>
 
-<hr class="divider"/> -->
+<!-- ══ CERTIFICATE MODAL ══ -->
+<div class="cert-modal" id="certModal" aria-hidden="true">
 
-<!-- TESTIMONIALS -->
-<!-- <section id="testimonials" class="section-pad">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem" class="fade-in">
-      <div class="eyebrow" style="justify-content:center"> Testimonials</div>
-      <h2 class="section-title">Happy People <span>Say</span></h2>
+  <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+
+  <div class="cert-modal-box" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+
+    <button
+      class="cert-modal-close"
+      id="certModalClose"
+      type="button"
+      aria-label="Close certificate"
+    >
+      <i class="fa fa-times"></i>
+    </button>
+
+    <button
+      class="cert-modal-nav cert-modal-prev"
+      id="certModalPrev"
+      type="button"
+      aria-label="Previous certificate"
+    >
+      <i class="fa fa-chevron-left"></i>
+    </button>
+
+    <div class="cert-modal-content">
+
+      <img
+        id="certModalImage"
+        src=""
+        alt=""
+      >
+
+      <div class="cert-modal-caption">
+        <strong id="certModalTitle"></strong>
+        <span id="certModalMeta"></span>
+      </div>
+
     </div>
-    <div class="tgrid">
-      <div class="tcard fade-in d1">
-        <div class="tq">"</div>
-        <p class="ttxt">Sausan berhasil menyelesaikan skripsi dengan topik yang sangat kompleks dan menghasilkan model multimodal yang impressive. Dedikasi dan ketelitiannya luar biasa — salah satu mahasiswi terbaik yang saya bimbing.</p>
-        <div class="tperson">
-          <div class="tavatar">👨‍🏫</div>
-          <div><div class="tname">Dr. Helmie Arif Wibawa</div><div class="trole">Dosen Pembimbing I · Undip</div></div>
-        </div>
-      </div>
-      <div class="tcard fade-in d2">
-        <div class="tq">"</div>
-        <p class="ttxt">Hasil kerjanya sangat rapi dan terstruktur. Dari metodologi riset hingga implementasi kode — semuanya well-documented. Sangat mudah diikuti dan dikembangkan lebih lanjut.</p>
-        <div class="tperson">
-          <div class="tavatar">👩‍🏫</div>
-          <div><div class="tname">Yunila Dwi Putri A.</div><div class="trole">Dosen Pembimbing II · Undip</div></div>
-        </div>
-      </div>
-      <div class="tcard fade-in d3">
-        <div class="tq">"</div>
-        <p class="ttxt">Kolaborasi yang menyenangkan! Sausan sangat proaktif dan cepat memahami kebutuhan. Hasil desainnya selalu melampaui ekspektasi — clean, intuitif, dan estetik.</p>
-        <div class="tperson">
-          <div class="tavatar">👨‍💼</div>
-          <div><div class="tname">Rekan Proyek</div><div class="trole">IT Project Collaborator</div></div>
-        </div>
-      </div>
-    </div>
+
+    <button
+      class="cert-modal-nav cert-modal-next"
+      id="certModalNext"
+      type="button"
+      aria-label="Next certificate"
+    >
+      <i class="fa fa-chevron-right"></i>
+    </button>
+
   </div>
-</section> -->
+</div>
 
-<!-- <hr class="divider"/> -->
-
-<!-- CONTACT -->
-<section id="contact" class="section-pad">
-  <div class="container">
+<!-- ══ CONTACT ══ -->
+<section id="contact" class="section tint">
+  <div class="container contact-container">
     <div class="contact-wrap">
-      <div class="fade-in">
-        <h2 class="section-title">Have an Idea?<br><span>Let's Make It Happen</span></h2>
-        <p class="contact-desc">I'm always excited to discuss new ideas, build meaningful products, and collaborate with great people. Whether it's AI, software development, or something in between, let's connect.</p>
-        <div class="cdetail">
-          <div class="cd-ico"><i class="fa fa-envelope"></i></div>
-          <div><div class="cd-lbl">Email</div><div class="cd-val">sausanberliana@gmail.com</div></div>
-        </div>
-        <div class="cdetail">
-          <div class="cd-ico"><i class="fab fa-linkedin-in"></i></div>
-          <div><div class="cd-lbl">Linkedin</div><div class="cd-val">Sausan Berliana Arrizqi</div></div>
-        </div>
-        <div class="cdetail">
-          <div class="cd-ico"><i class="fab fa-github"></i></div>
-          <div><div class="cd-lbl">GitHub</div><div class="cd-val">@sausanbr</div></div>
-        </div>
-        <div class="cdetail">
-          <div class="cd-ico"><i class="fa fa-location-dot"></i></div>
-          <div><div class="cd-lbl">Location</div><div class="cd-val">Rembang, Central Java, Indonesia</div></div>
-        </div>
-        <!-- <div class="social-row">
-          <a class="soc" href="#" title="GitHub"><i class="fab fa-github"></i></a>
-          <a class="soc" href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a class="soc" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a class="soc" href="#" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
-        </div> -->
+      <div class="reveal">
+        <p class="label"><span class="num">06</span></p>
+        <h2 class="sec-title">Get in touch</h2>
+        <p class="contact-desc">
+          I'm open to Web Development, Software Engineering, AI/ML, and Data Science opportunities. Got a role to fill, a project to build, or a problem to solve? Let's connect!
+        </p>
+
+        <ul class="social-list">
+          <li><a href="mailto:sausanberliana@gmail.com">
+            <i class="fa fa-envelope"></i>
+            <div><span>Email</span><b>sausanberliana@gmail.com</b></div>
+            <i class="fa fa-arrow-up-right-from-square go"></i>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/sausan-berliana-arrizqi" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div><span>LinkedIn</span><b>sausan-berliana-arrizqi</b></div>
+            <i class="fa fa-arrow-up-right-from-square go"></i>
+          </a></li>
+          <li><a href="https://github.com/sausanbr" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <div><span>GitHub</span><b>@sausanbr</b></div>
+            <i class="fa fa-arrow-up-right-from-square go"></i>
+          </a></li>
+          <li><a href="https://www.kaggle.com/sausanberliana" target="_blank" rel="noopener">
+            <i class="fa-brands fa-kaggle"></i>
+            <div><span>Kaggle</span><b>@sausanberliana</b></div>
+            <i class="fa fa-arrow-up-right-from-square go"></i>
+          </a></li>
+        </ul>
       </div>
-      <div class="cform fade-in d2">
-        <div class="fg"><label>Name</label><input type="text" id="name" placeholder="Your name"></div>
-        <div class="fg"><label>Email</label><input type="email" id="email" placeholder="Your email"></div>
-        <div class="fg"><label>Message</label><textarea id="message" placeholder="Hi Sausan, I'd like to..."></textarea></div>
-        <button class="submit-btn" onclick="handleSend()">
-            <i class="fa fa-paper-plane"></i>
-            Send Message
-        </button>
-      </div>
+
+      <form class="cform glass reveal" data-d="1" onsubmit="return false;">
+        <div class="fg"><label for="name">Name</label><input type="text" id="name" placeholder="Your name"></div>
+        <div class="fg"><label for="email">Email</label><input type="email" id="email" placeholder="you@example.com"></div>
+        <div class="fg"><label for="message">Message</label><textarea id="message" placeholder="Hi Sausan, we're hiring for…"></textarea></div>
+        <button type="button" class="btn btn-pink btn-block magnet" onclick="handleSend(this)">Send message</button>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <a class="foot-logo" href="#home">Sausan<span>.</span></a>
-  <p class="foot-copy">© 2026 Sausan Berliana Arrizqi</p>
-  <div class="foot-links">
-    <a href="#about">About</a>
-    <!-- <a href="#skills">Skills</a> -->
-    <a href="#project">Projects</a>
-    <!-- <a href="#testimonials">Portfolio</a> -->
-    <a href="#contact">Contact</a>
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 Sausan Berliana Arrizqi</p>
+    <div class="foot-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#project">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 </footer>
+</main>
 
-<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
-  <i class="fa fa-chevron-up"></i>
-</button>
+<button id="btt" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
 
 <script src="assets/js/projects.js"></script>
 <script src="assets/js/modal.js"></script>
+<script src="assets/js/certificates.js"></script>
 <script src="assets/js/script.js"></script>
-
 </body>
 </html>
