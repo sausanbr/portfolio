@@ -4,7 +4,7 @@ const projects = {
         badge: "Undergraduate Thesis",
         visibility: "public",
         title: "Fake vs Real Twitter Account Classification",
-        timeline: "Oct 2025 — Feb 2026",
+        timeline: "Oct 2025 — Mar 2026",
         gallery:[
         "assets/img/ta/grafik_dl.png",
         "assets/img/ta/curve.png",

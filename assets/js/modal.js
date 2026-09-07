@@ -1,10 +1,5 @@
-/* ── PROJECT MODAL ───────────────────────────────────── */
-
 let currentGallery = [];
 let currentIndex = 0;
-
-
-/* ── OPEN PROJECT ───────────────────────────────────── */
 
 function openProject(id) {
 
@@ -16,7 +11,18 @@ function openProject(id) {
   /* Gallery */
   currentGallery = p.gallery || [];
   currentIndex = 0;
-  updateGallery();
+
+  if (currentGallery.length) {
+    const firstImage = new Image();
+
+    firstImage.onload = () => {
+      updateGallery();
+    };
+
+    firstImage.src = currentGallery[0];
+  } else {
+    updateGallery();
+  }
 
 
   /* Visibility */
@@ -154,6 +160,14 @@ function openProject(id) {
 
 /* ── GALLERY ─────────────────────────────────────────── */
 
+function preloadImage(src) {
+  if (!src) return;
+
+  const img = new Image();
+  img.src = src;
+}
+
+
 function updateGallery() {
 
   const img =
@@ -164,9 +178,25 @@ function updateGallery() {
     return;
   }
 
-  img.src = currentGallery[currentIndex];
+  const currentSrc = currentGallery[currentIndex];
+
+  /* Show current image */
+  img.src = currentSrc;
 
 
+  /* Preload next + previous images */
+  const nextIndex =
+    (currentIndex + 1) % currentGallery.length;
+
+  const prevIndex =
+    (currentIndex - 1 + currentGallery.length) %
+    currentGallery.length;
+
+  preloadImage(currentGallery[nextIndex]);
+  preloadImage(currentGallery[prevIndex]);
+
+
+  /* Gallery dots */
   const dots =
     document.getElementById("galleryDots");
 
@@ -189,11 +219,8 @@ function nextImage() {
 
   if (!currentGallery.length) return;
 
-  currentIndex++;
-
-  if (currentIndex >= currentGallery.length) {
-    currentIndex = 0;
-  }
+  currentIndex =
+    (currentIndex + 1) % currentGallery.length;
 
   updateGallery();
 }
@@ -203,11 +230,9 @@ function prevImage() {
 
   if (!currentGallery.length) return;
 
-  currentIndex--;
-
-  if (currentIndex < 0) {
-    currentIndex = currentGallery.length - 1;
-  }
+  currentIndex =
+    (currentIndex - 1 + currentGallery.length) %
+    currentGallery.length;
 
   updateGallery();
 }
@@ -221,7 +246,6 @@ function goToImage(index) {
 
   updateGallery();
 }
-
 
 /* ── CLOSE MODAL ─────────────────────────────────────── */
 
