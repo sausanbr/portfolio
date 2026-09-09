@@ -64,9 +64,9 @@ const projects = {
         title: "Fixed Asset Management System (PT Dirgantara Indonesia)",
         timeline: "Jan 2025 — Feb 2025",
         gallery:[
-            "assets/img/pkl/pkl-1.webp",
-            "assets/img/pkl/pkl-role.webp",
-            "assets/img/pkl/pkl-preview.webp",
+        "assets/img/pkl/pkl-1.webp",
+        "assets/img/pkl/pkl-role.webp",
+        "assets/img/pkl/pkl-preview.webp",
         "assets/img/pkl/pkl-2.webp",
         "assets/img/pkl/pkl-3.webp",
         "assets/img/pkl/pkl-modal.webp",
@@ -74,20 +74,21 @@ const projects = {
         "assets/img/pkl/pkl-5.webp",
         "assets/img/pkl/pkl-8.webp",
         "assets/img/pkl/pkl-9.webp",
-        // "assets/img/pkl/pkl-diagram.webp",
         ],
         overview:
-        "Developed a web-based <b>Fixed Asset Management System</b> during my internship at PT Dirgantara Indonesia to digitalize asset registration, QR code tracking, depreciation monitoring, and damage reporting for the IT Division.",        
+        "Developed a web-based <b>Fixed Asset Management System</b> during my internship at PT Dirgantara Indonesia to digitalize asset registration, QR code tracking, employee asset tracking, depreciation monitoring, and damage reporting for the IT Division.",        
         problem:
-        "The existing asset management system had an <b>unstructured database and an outdated interface</b>, which made it difficult to track assets and monitor depreciation. With hundreds of IT assets to manage, the system needed a more organized database, a simpler interface, and a more efficient way to report damaged assets.",
+        "The existing asset management system had an <b>unstructured database and an outdated interface</b>, making asset tracking and depreciation monitoring inefficient. With hundreds of IT assets to manage, the system needed a more organized database, a simpler interface, and a more efficient process for reporting and monitoring damaged assets.",
         solution:
-        "Built a full-stack web application using <strong>Laravel and MySQL</strong> with role-based access control for two user roles. Core features include CRUD modules for <strong>12 asset categories</strong>, QR code generation for physical asset identification, a damage reporting module with condition tracking, and depreciation visualization on dashboard. Covered end-to-end development from requirements gathering to deployment, and validated functionality through <strong>137 Black Box test cases</strong>.",                
+        "Built a full-stack web application using <strong>Laravel, PHP, MySQL, JavaScript, and Bootstrap</strong> with role-based access control for two user roles. The system includes CRUD modules for covering <strong>12 asset categories</strong>, QR code generation for physical asset identification, employee asset tracking, damage reporting module with asset condition monitoring, and dashboard visualizations for asset statistics, conditions, and depreciation. Covered end-to-end development from requirements gathering, database design, implementation, deployment, and functional validation through <strong>137 Black Box test cases</strong>.",                
         contributions: [
+        "Collaborated with supervisors and end users to identify system needs and evaluate proposed features.",
         "Conducted requirements analysis and designed the database schema and application architecture.",
-        "Developed full-stack features using Laravel, including CRUD modules for 12 asset categories.",
+        "Developed full-stack features using Laravel, including asset CRUD, employee asset tracking, damage reporting, and asset condition management.",
         "Integrated QR code generation for asset identification and tracking.",
-        "Built damage reporting, asset condition monitoring, and depreciation visualization features.",
+        "Developed dashboard visualizations for asset statistics, conditions, and depreciation monitoring.",
         "Performed Black Box Testing across 137 functional test cases, all passed.",
+        "Deployed the system and performed Black Box Testing across 137 functional test cases, with all test cases passed."
         ],
 
         highlights:[
@@ -195,7 +196,6 @@ const projects = {
         { label: "Transactions", value: "541,909" },
         { label: "Customer Clusters", value: "3" },
         { label: "Method", value: "K-Means" },
-        // { label: "Optimal K", value: "3" },
         ],
 
         stack: [
